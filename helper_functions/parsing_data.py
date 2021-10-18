@@ -61,6 +61,11 @@ print(m)
 # id=123 signup_ts=datetime.datetime(2017, 7, 14, 0, 0) name='James'
 
 
+"""
+parse_file: this takes in a file path, reads the file and passes the contents to parse_raw.
+If content_type is omitted, it is inferred from the file's extension
+"""
+
 path = Path('data.json')
 path.write_text('{"id": 123, "name": "James"}')
 m = User.parse_file(path)
