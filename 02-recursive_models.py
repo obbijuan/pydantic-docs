@@ -22,3 +22,12 @@ s = Spam(
 
 ''' Retorna un diccionario de los campos y valores del modelo.'''
 print(s.dict())
+"""
+{
+    'foo': {'count': 4, 'size': None},
+    'bars': [
+        {'apple': 'x1', 'banana': 'y'},
+        {'apple': 'x2', 'banana': 'y'},
+    ],
+}
+"""
